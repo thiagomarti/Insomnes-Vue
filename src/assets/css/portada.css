@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+.portada {
+    background-color: rgb(235 231 225);
+    height: 100vh;  
+}
+
+.portadatext {
+    padding-top: 12%;
+}
+
+.portada h1 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.portada h5 {
+    margin: auto;
+    text-align: center;
+    padding-top: 29px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    max-width: 900px;
+}
+
+.portada img {
+    padding-top: 70px;
+    width: 30%;
+    right: 10%;
+    display: block;
+    position: absolute;
+}
+
+@media screen and (max-width:1441px) {
+ 
+    .portadatext {
+        padding-top: 20%;
+    }
+}
+
+@media screen and (max-width:1040px) {
+ 
+    .portadatext {
+        padding-top: 20%;
+    }
+}
+
+@media screen and (max-width:860px) {
+ 
+    .portada img {
+        width: 40%;
+    }
+
+    .portadatext {
+        padding-top: 50%;
+    }
+}
+
+@media screen and (max-width:630px) {
+ 
+    .portada img {
+        width: 50%;
+        right: 24%;
+    }
+}

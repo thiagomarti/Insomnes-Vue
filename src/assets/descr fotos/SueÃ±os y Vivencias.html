@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!----<title> Product Card | CodingLab </title>---->
+    <link rel="stylesheet" href="../css/descr libros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="../css/estilos_minivar.css">
+     <link rel="stylesheet" href="../css/estilos.css">
+     <link rel="stylesheet" href="../css/estilos2.css">
+.
+     <link rel="stylesheet" href="../css/fonts.css">
+     <link rel="stylesheet" href="../css/descr libros.css">
+     <meta name="author" content="Martix">
+     <link rel="shortcut icon" href="./fotos/insomnes.png" type="image/x-icon">
+     <link rel="icon" href="./fotos/insomnes.png" type="image/x-icon">
+     <title>Sueños y Vivencias</title>
+   </head>
+<body>
+
+<div class="visibilidad" id="sidebar">
+    <div class="logo-details">
+      <i id="busc-logo"><img src="../fotos/insomnes.png" alt=""></i>
+        <div class="logo_name">iNSomnes</div>
+       <i class='bx bx-menu' id="btn"onclick="abrir()"></i> 
+    </div>
+    <ul class="nav-list">
+      <li class="abierto" id="search1">
+          <i class='bx bx-search'  ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li id="logi1" class="logi1 abierto">
+        <i><img src="../fotos/insomnes.png" alt=""></i>
+      </li>
+      <li id="inicio1" class="inicio1 abierto">
+        <a href="../index.html" id="inicio2" class="abierto" onclick="cerrar()">
+          <i class='bx bxs-home' ></i>
+          <span class="links_name">Inicio</span>
+        </a>
+         <span class="tooltip">Inicio</span>
+      </li>
+      <li id="nosotros1" class="nosotros1 abierto">
+       <a href="../index.html#sobrenos"id="nosotros2" class="abierto">
+        <i class='bx bx-group'></i>
+         <span class="links_name">Sobre nosotros</span>
+       </a>
+       <span class="tooltip">Sobre nosotros</span>
+     </li>
+
+     
+     <li id="ediciones1" class="ediciones1 abierto select-btn" >
+       <a href="#" id="ediciones2" class="abierto">
+        <i class='bx bx-library'></i>
+         <span class="links_name sBtn-text">Ediciones</span>
+         <i id="flechita" class="bx bx-chevron-down abierto"></i>
+       </a>
+       <span class="tooltip1"><a class="otro" href="../Libros de Autor.html">libros de autor</a></span>
+       <span class="tooltip2"><a class="otro" href="../antologias.html">antologias</a></span>
+     </li>
+
+     
+     <li class="libros abierto" id="libroesc">
+      <a href="../Libros de Autor.html" class="abierto">
+        <span class="links_name">&nbsp;&nbsp;Libros de autor</span>
+      </a> 
+      <span class="tooltip">Libros de autor</span>
+    </li>
+
+    <li class="libros abierto" id="libroesc1">
+      <a href="../antologias.html" class="abierto">
+        <span class="links_name">&nbsp;&nbsp;Antologias</span>
+      </a>
+      <span class="tooltip">Antologias</span>
+    </li>
+    
+    <li id="ig1" class="ig1 abierto">
+      <a href="https://www.instagram.com/editorial_insomnes/" target="_blank" id="ig2" class="abierto">
+        <i class='bx bxl-instagram' style='color:#f5275a'></i>
+      </a>
+      <li id="fc1" class="fc1 abierto">
+        <a href="https://www.facebook.com/people/Editorial-Insomnes/100076280835164/" id="fc2" target="_blank" class="abierto">
+          <i class='bx bxl-facebook-circle bx-sm' style='color:#0026ff'></i>
+        </a>
+    </li>
+
+    </ul>
+  </div>
+ 
+  <script>
+  let minibar = document.getElementById("sidebar");
+  let closeBtn = document.getElementById("btn")
+  let searchBtn = document.getElementsByClassName(".bx-search");
+  let logi = document.getElementById("logi1")
+  let inicio = document.getElementById("inicio1")
+  let inicio1 = document.getElementById("inicio2")
+  let nosotros = document.getElementById("nosotros1")
+  let nosotros1= document.getElementById("nosotros2")
+  let ediciones = document.getElementById("ediciones1")
+  let ediciones1 = document.getElementById("ediciones2")
+  let flecha = document.getElementById("flechita")
+  let search1 = document.getElementById("search1")
+  let logo = document.getElementById("busc-logo")
+  let ig = document.getElementById("ig1")
+  let ig1 = document.getElementById("ig2")
+  let fc = document.getElementById("fc1")
+  let fc1 = document.getElementById("fc2") 
+  let libroesc = document.getElementById("libroesc") 
+  let libroesc1 = document.getElementById("libroesc1") 
+
+
+
+  function abrir() {
+    minibar.classList.toggle("open");
+    logi.classList.toggle("abierto");
+    inicio.classList.toggle("abierto");
+    inicio1.classList.toggle("abierto");
+    nosotros.classList.toggle("abierto");
+    nosotros1.classList.toggle("abierto");
+    ediciones.classList.toggle("abierto");
+    ediciones1.classList.toggle("abierto");
+    flecha.classList.toggle("abierto");
+    search1.classList.toggle("abierto");
+    logo.classList.toggle("abierto");
+    ig.classList.toggle("abierto");
+    ig1.classList.toggle("abierto");
+    fc.classList.toggle("abierto");
+    fc1.classList.toggle("abierto");
+    libroesc.classList.toggle("abierto");
+    libroesc1.classList.toggle("abierto");
+
+    console.log(inicio)
+  
+  };
+
+  searchBtn.addEventListener("click", ()=>{ // minivar open when you click on the search iocn
+    minivar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change minivar button(optional)
+  function menuBtnChange() {
+   if(minivar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+
+
+    <div class="grande">
+  <div class="container">
+    <div class="box one">
+      <div class="details">
+        <div class="topic">Sueños y Vivencias</div> 
+        <p>Blanca Lucila Ferreira Espínola. Nacida en Hiaty, Paraguay, es ciudadana argentina desde el año 2000; enfermera profesional y acompañante terapéutica infantil. La autora agrega un poquito de ficción a historias reales</p>
+      </div>
+      
+    </div>
+    <div class="box two">
+      <div class="image-box">
+        <div class="image">
+          <img src="../fotos/tapas libros/sueños y vivencias.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="chico">
+<div class="product-card">
+    <div class="logo-cart">
+      <img src="../fotos/insomnes.png" alt="logo">
+      
+    </div>
+    <div class="main-images">
+      <img id="blue" class="blue active" src="../fotos/tapas libros/sueños y vivencias.jpeg" alt="blue">
+    </div>
+    <div class="shoe-details">
+      <span class="shoe_name">Sueños y Vivencias</span>
+      <p>Blanca Lucila Ferreira Espínola. Nacida en Hiaty, Paraguay, es ciudadana argentina desde el año 2000; enfermera profesional y acompañante terapéutica infantil. La autora agrega un poquito de ficción a historias reales</p>
+     
+  </div>
+  <script>
+   let circle = document.querySelector(".color-option");
+
+   circle.addEventListener("click", (e)=>{
+     let target = e.target;
+     if(target.classList.contains("circle")){
+       circle.querySelector(".active").classList.remove("active");
+       target.classList.add("active");
+       document.querySelector(".main-images .active").classList.remove("active");
+       document.querySelector(`.main-images .${target.id}`).classList.add("active");
+     }
+   });
+  </script>
+</div>
+</body>
+</html>
