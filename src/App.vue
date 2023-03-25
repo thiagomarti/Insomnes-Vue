@@ -1,20 +1,20 @@
 <template>
   <BigHeader></BigHeader>
-  <SmallHeader></SmallHeader>
+
 
 
 </template>
 
 <script>
 import BigHeader from './components/BigHeader.vue'
-import SmallHeader from './components/SmallHeader.vue'
+
 
 
 export default {
   name: 'App',
   components: {
     BigHeader,
-    SmallHeader,
+
   }
 
 }

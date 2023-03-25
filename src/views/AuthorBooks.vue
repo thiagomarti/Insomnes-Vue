@@ -10,7 +10,7 @@
 
 
 export default {
-  name: 'OurWorkView',
+  name: 'AuthorBooks',
   components: {
   }
 }

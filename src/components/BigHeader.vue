@@ -10,13 +10,13 @@
                         </li>
 
                         <ul id="menu" class="" style="touch-action: pan-y;">   
-                        <li class="menuInicio"><a href="" accesskey="0" class="cab"><FONT COLOR="white"><router-link to="/">Inicio</router-link></FONT></a></li>
+                        <li class="menuInicio"><a href="" accesskey="0" class="cab"><router-link to="/">Inicio</router-link></a></li>
                         <li class="menuBiografia">
-                        <a id="achica" class="cab noLink sf-with-ul"><FONT COLOR="white"><router-link to="/#nosotros">Sobre nosotros</router-link></FONT></a>
+                        <a id="achica" class="cab noLink sf-with-ul"><router-link to="/nosotros">Sobre nosotros</router-link></a>
                         </li>
     
                         <li class="menu-right parent">
-                        <a id="achica" href="#"><i class=""></i><span><FONT COLOR="white">Ediciones</FONT></span></a>
+                        <a id="achica" href="#"><i class=""></i><span>Ediciones</span></a>
                         <ul class="sub-menu">
                         <li><a id="oscuro" href=""><router-link to="/AuthorBooks">Libros de autor</router-link></a></li>
                         <li><a id="oscuro" href=""><router-link to="/Anthologies">antologias</router-link></a></li>
@@ -31,7 +31,7 @@
                         </ul>
                             </div>
                                 </div>
-                                    </header>
+                </header>
                                         </div></div>
 </template>
 
