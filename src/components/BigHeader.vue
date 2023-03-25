@@ -10,7 +10,7 @@
                         </li>
 
                         <ul id="menu" class="" style="touch-action: pan-y;">   
-                        <li class="menuInicio"><a href="" accesskey="0" class="cab"><router-link to="/">Inicio</router-link></a></li>
+                        <li class="menuInicio"><a href="" accesskey="0" class="cab"><router-link to="/Inicio">Inicio</router-link></a></li>
                         <li class="menuBiografia">
                         <a id="achica" class="cab noLink sf-with-ul"><router-link to="/nosotros">Sobre nosotros</router-link></a>
                         </li>
@@ -18,8 +18,8 @@
                         <li class="menu-right parent">
                         <a id="achica" href="#"><i class=""></i><span>Ediciones</span></a>
                         <ul class="sub-menu">
-                        <li><a id="oscuro" href=""><router-link to="/AuthorBooks">Libros de autor</router-link></a></li>
-                        <li><a id="oscuro" href=""><router-link to="/Anthologies">antologias</router-link></a></li>
+                        <li><a id="oscuro" href=""><router-link to="AuthorBooksView">Libros de autor</router-link></a></li>
+                        <li><a id="oscuro" href=""><router-link to="AnthologiesView">antologias</router-link></a></li>
                         </ul>
                         </li> 
                         <li class="menuFace">
