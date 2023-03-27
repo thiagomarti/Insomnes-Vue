@@ -3,21 +3,27 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import AuthorBooksView from '@/views/AuthorBooksView.vue'
 import AnthologiesView from '@/views/AnthologiesView.vue'
+import AboutUsView from '@/views/AboutUsView.vue'
 
 const routes = [
     {
-        path: '/Inicio',
-        name: 'HomeView',
+        path: '/',
+        name: 'home',
         component: HomeView
     },
     {
-        path: '/Antologias',
-        name: 'AnthologiesView',
+        path: '/nosotros',
+        name: 'AboutUs',
+        component: AboutUsView
+    },
+    {
+        path: '/antologias',
+        name: 'Anthologies',
         component: AnthologiesView
     },
     {
-        path: '/Libros de Autor',
-        name: 'AuthorBooksView',
+        path: '/libros_de_autor',
+        name: 'AuthorBooks',
         component: AuthorBooksView
     }
 ]

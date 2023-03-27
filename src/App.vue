@@ -1,6 +1,6 @@
 <template>
-  <BigHeader></BigHeader>
-  <SmallHeader></SmallHeader>
+  <BigHeader />
+  <SmallHeader />
 
 
 </template>
