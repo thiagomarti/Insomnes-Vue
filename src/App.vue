@@ -1,7 +1,7 @@
 <template>
   <BigHeader />
   <SmallHeader />
-
+  <router-view />
 
 </template>
 
@@ -10,13 +10,11 @@ import BigHeader from './components/BigHeader.vue'
 import SmallHeader from './components/SmallHeader.vue'
 
 
-
 export default {
   name: 'App',
   components: {
-    BigHeader,
     SmallHeader,
-
+    BigHeader,
   }
 
 }

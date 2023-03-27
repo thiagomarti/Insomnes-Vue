@@ -1,76 +1,178 @@
 <template>
-    <div class="visibilidad" id="sidebar">
-    <div class="logo-details">
-      <i id="busc-logo"><img src="../../public/assets/fotos/insomnes.png" alt=""></i>
-        <div class="logo_name">iNSomnes</div>
-       <i class='bx bx-menu' id="btn" onclick="abrir()"></i> 
+  <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="mobile_menu">
+        <li><router-link to="/">Inicio</router-link></li>
+        <li> <router-link to="/nosotros">Sobre nosotros</router-link></li>
+        <li><router-link to="/libros_de_autor">Libros de autor</router-link></li>
+        <li><router-link to="/antologias">Antologias</router-link></li>
+      </ul>
     </div>
-    <ul class="nav-list">
-      <li class="abierto" id="search1">
-          <i class='bx bx-search'  ></i>
-         <input type="text" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
-      <li id="logi1" class="logi1 abierto">
-       <i><img src="../../public/assets/fotos/insomnes.png" alt=""></i>
-      </li>
-      <li id="inicio1" class="inicio1 abierto">
-        <a href="./index.html" id="inicio2" class="abierto" onclick="cerrar()">
-          <i class='bx bx-home-alt-2' ></i>
-          <span class="links_name">Inicio</span>
-        </a>
-         <span class="tooltip">Inicio</span>
-      </li>
-      <li id="nosotros1" class="nosotros1 abierto">
-       <a href="#sobrenos" id="nosotros2" class="abierto">
-        <i class='bx bx-group'></i>
-         <span class="links_name">Sobre nosotros</span>
-       </a>
-       <span class="tooltip">Sobre nosotros</span>
-     </li>
-
-     
-     <li id="ediciones1" class="ediciones1 abierto select-btn" >
-       <a href="#libritos2" id="ediciones2" class="abierto">
-        <i class='bx bx-library'></i>
-         <span class="links_name sBtn-text">Ediciones</span>
-         <i id="flechita" class="bx bx-chevron-down abierto"></i>
-       </a>
-       <span class="tooltip1"><a class="otro" href="./Libros de Autor.html">libros de autor</a></span>
-       <span class="tooltip2"><a class="otro" href="./antologias.html">antologias</a></span>
-     </li>
-
-     
-     <li class="libros abierto" id="libroesc">
-      <a href="./Libros de Autor.html" class="abierto">
-        <span class="links_name">&nbsp;&nbsp;Libros de autor</span>
-      </a> 
-      <span class="tooltip">Libros de autor</span>
-    </li>
-
-    <li class="libros abierto" id="libroesc1">
-      <a href="./antologias.html" class="abierto">
-        <span class="links_name">&nbsp;&nbsp;Antologias</span>
-      </a>
-      <span class="tooltip">Antologias</span>
-    </li>
-    
-    <li id="ig1" class="ig1 abierto">
-      <a href="https://www.instagram.com/editorial_insomnes/" target="_blank" id="ig2" class="abierto">
-        <i class='bx bxl-instagram' style='color:#f5275a'></i>
-      </a>
-      </li>
-      <li id="fc1" class="fc1 abierto">
-        <a href="https://www.facebook.com/people/Editorial-Insomnes/100076280835164/" id="fc2" target="_blank" class="abierto">
-          <i class='bx bxl-facebook-circle bx-sm' style='color:#0026ff'></i>
-        </a>
-    </li>
-
-    </ul>
-  </div>
+  </nav>
  
 </template>
+<style>
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
 
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#mobile_menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#mobile_menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+</style>
 <script>
 export default {
     name: 'SmallHeader',

@@ -11,8 +11,6 @@
 
 export default {
   name: 'AnthologiesView',
-  components: {
-  }
 }
 </script>
 
