@@ -1,0 +1,217 @@
+<template>
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <router-link to="/"  class="logo"><img src="../../public/assets/fotos/insomnes.png" alt=""></router-link>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><router-link to="/">INICIO</router-link></li>
+                <li><router-link to="/nosotros">SOBRE NOSOTROS</router-link></li>
+                <li class="subnav">
+                    <p class="subnavbtn">EDICIONES <i class="fa fa-caret-down"></i></p>
+                    <div class="subnav-content">
+                        <router-link to="/libros_de_autor">Libros de autor</router-link>
+                        <router-link to="/antologias">Antologias</router-link>
+                    </div>
+                </li>
+                <li class="menuFace">
+                    <a id="face" href="https://www.facebook.com/people/Editorial-Insomnes/100076280835164/" target="_blank"><i class='bx bxl-facebook-circle bx-sm' style='color:#ffffff'></i></a>
+                </li>
+                <li class="menuIg">
+                    <a id="ig" href="https://www.instagram.com/editorial_insomnes/" target="_blank"><i class='bx bxl-instagram bx-sm' style='color:#ffffff'></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+</template>
+<style scoped>
+/* Header */
+.header{
+    background-color: rgb(121, 70, 3);
+    box-shadow: 1px 1px 5px 0px gray;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo */
+.logo{
+    display: inline-block;
+    color: white;
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:rgb(121, 70, 3);
+    overflow: hidden;
+    
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.menu a,.menu p{
+    display: block;
+    padding: 30px;
+    color: white;
+
+}
+
+.menu a:hover{
+    background-color: grey;
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Sub nav */
+.subnav-content {
+    background-color: rgb(121, 70, 3);
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0 ;
+    display: none;
+  }
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/* Menu Icon */
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+
+    .menu li{
+        float: left;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color: grey;
+        
+    }
+    
+    .hamb{
+        display: none;
+    }
+
+        /* Sub nav */
+    .subnav-content {
+        padding: 20px 0 ;
+        display: none;
+        background-color: rgb(121, 70, 3);
+    }
+    .subnav-content a {
+        color: white;
+    }
+
+    .menu a,.menu p{
+        padding: 30px;
+    }
+}
+</style>
+<script>
+export default {
+    name: 'HeaderComponent',
+}
+</script>

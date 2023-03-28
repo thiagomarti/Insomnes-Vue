@@ -1,43 +1,56 @@
 <template>
-  <nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="mobile_menu">
-        <li><router-link to="/">Inicio</router-link></li>
-        <li> <router-link to="/nosotros">Sobre nosotros</router-link></li>
-        <li><router-link to="/libros_de_autor">Libros de autor</router-link></li>
-        <li><router-link to="/antologias">Antologias</router-link></li>
-      </ul>
-    </div>
-  </nav>
+  <header style="" id="sidebar">
+    <nav role="navigation">
+      <div id="menuToggle">
+        
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+                          
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="mobile_menu">
+          <li class="bx bx-home-alt-2"><router-link to="/">Inicio</router-link></li>
+          <li class="bx bx-group"><router-link to="/nosotros">Sobre nosotros</router-link></li>
+          <li class="bx bx-library"><router-link to="/libros_de_autor">Libros de autor</router-link></li>
+          <li class="bx bx-library"><router-link to="/antologias">Antologias</router-link></li>
+        </ul>
+      </div>
+
+    </nav>
+
+  </header>
+
  
 </template>
 <style>
+
+nav {
+  height: 60px;
+  background:rgb(121, 70, 3);
+}
+
 #menuToggle
 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 20px;
+  left: 20px;
   
   z-index: 1;
   
@@ -48,7 +61,7 @@
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: #FFF;
   
   transition: color 0.3s ease;
 }
@@ -142,19 +155,19 @@
  */
 #mobile_menu
 {
+  background:rgb(121, 70, 3);
   position: absolute;
-  width: 300px;
+  width: 515px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
-  background: #ededed;
+
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(0, -100%);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -163,6 +176,7 @@
 {
   padding: 10px 0;
   font-size: 22px;
+  display: block;
 }
 
 /*
@@ -172,6 +186,7 @@
 {
   transform: none;
 }
+
 </style>
 <script>
 export default {

@@ -1,20 +1,15 @@
 <template>
-  <BigHeader />
-  <SmallHeader />
+  <Header />
   <router-view />
-
 </template>
 
 <script>
-import BigHeader from './components/BigHeader.vue'
-import SmallHeader from './components/SmallHeader.vue'
-
+import Header from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    SmallHeader,
-    BigHeader,
+    Header
   }
 
 }
