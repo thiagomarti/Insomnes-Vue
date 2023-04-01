@@ -46,19 +46,17 @@
 .logo{
     display: inline-block;
     color: white;
-    font-size: 60px;
+    margin-top: 0.8%;
     margin-left: 10px;
 }
 
 .logo img {
-    width: 45px;
-    height: 45px;
+    width: 12vh;
 }
 
 /* Nav menu */
 .nav{
     width: 100%;
-    height: 100%;
     position: fixed;
     background-color:rgb(121, 70, 3);
     overflow: hidden;
@@ -71,10 +69,14 @@
 
 .menu a,.menu p{
     display: block;
-    padding: 30px;
+    padding: 3vh;
     color: white;
-
 }
+
+.menu li{
+    font-size: 2vh;
+}
+
 
 .menu a:hover{
     background-color: grey;
@@ -88,17 +90,20 @@
 /* Sub nav */
 .subnav-content {
     background-color: rgb(121, 70, 3);
-    width: 100%;
     z-index: 1;
     padding: 20px 0 ;
     display: none;
+    position: sticky;
+    font-size: 2vh;
+    margin-left: 6%;
+    
   }
 .subnav-content a {
     color: white;
     text-decoration: none;
     padding: 0;
     margin: 10px 0;
-    text-align: center;
+
 }
 .subnav:hover .subnav-content {
     display: block;
@@ -109,7 +114,7 @@
 .hamb{
     cursor: pointer;
     float: right;
-    padding: 40px 20px;
+    padding: 6vh 20px;
 }
 
 
@@ -183,6 +188,7 @@
 
     .menu li{
         float: left;
+        font-size: initial;
     }
 
     .menu a:hover{
@@ -199,15 +205,20 @@
     .subnav-content {
         padding: 20px 0 ;
         display: none;
+        position: fixed;
+        font-size: initial;
         background-color: rgb(121, 70, 3);
+        margin-left: initial;
     }
     .subnav-content a {
         color: white;
     }
 
     .menu a,.menu p{
-        padding: 30px;
-    }
+    display: block;
+    padding: 30px;
+    color: white;
+}
 }
 </style>
 <script>
