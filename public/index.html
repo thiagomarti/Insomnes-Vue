@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <title>Editorial iNSomnes</title>
 </head>
 
@@ -17,6 +18,31 @@
   <div id="app"></div>
   <!-- built files will be auto injected -->
   
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elementosCarousel = document.querySelectorAll(".carousel")
+    M.Carousel.init(elementosCarousel, {
+        duration: 150,
+        shift: 5,
+        padding: 1,
+        numVisible: 10,
+
+    })
+} );
+
+document.addEventListener("DOMContentLoaded", () => {
+    let elementosCarousel2 = document.querySelectorAll(".carousel2")
+    M.Carousel.init(elementosCarousel2, {
+        duration: 150,
+        shift: 5,
+        padding: 1,
+        numVisible: 10,
+           
+
+    })
+} );
+
+  </script>
 </body>
 
 </html>

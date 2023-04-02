@@ -12,7 +12,7 @@
         <nav class="nav">
             <ul class="menu">
                 <li><router-link to="/">INICIO</router-link></li>
-                <li><router-link to="/nosotros">SOBRE NOSOTROS</router-link></li>
+                <li><router-link to="/">SOBRE NOSOTROS</router-link></li>
                 <li class="subnav">
                     <p class="subnavbtn">EDICIONES <i class="fa fa-caret-down"></i></p>
                     <div class="subnav-content">
@@ -40,6 +40,7 @@
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 /* Logo */
@@ -57,7 +58,7 @@
 /* Nav menu */
 .nav{
     width: 100%;
-    position: fixed;
+    position: sticky;
     background-color:rgb(121, 70, 3);
     overflow: hidden;
     
