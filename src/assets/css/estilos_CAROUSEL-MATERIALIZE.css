@@ -4,6 +4,10 @@ h2 {
     position: inherit;
 }
 
+.subtitulo1{
+    font-family: 'Alkatra', cursive;
+  }
+
 @media screen and (max-width:800px) {
     h2 {
         font-size: 4vh;
