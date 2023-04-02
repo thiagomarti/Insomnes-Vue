@@ -179,7 +179,7 @@
 @media (min-width: 768px) {
     .nav{
         max-height: none;
-        top: 0;
+        top: 2px;
         position: relative;
         float: right;
         width: fit-content;
@@ -219,8 +219,22 @@
     display: block;
     padding: 30px;
     color: white;
+    height: 60px;
 }
 }
+
+.nav {
+    webkit-box-shadow: initial;
+    box-shadow: initial;
+}
+
+@media only screen and (min-width: 601px) {
+    .nav{
+    height: initial;
+    line-height: initial;
+}
+}
+
 </style>
 <script>
 export default {

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <title>Editorial iNSomnes</title>
 </head>
 
@@ -17,7 +18,7 @@
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
-  
+  <img src="" alt="">
   <script>
 document.addEventListener("DOMContentLoaded", () => {
     const elementosCarousel = document.querySelectorAll(".carousel")
@@ -42,6 +43,26 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 } );
 
+
+                      document.getElementById('form').onsubmit('form', (event) => {
+                        event.preventDefault();
+                        alert(1)
+                      });
+  
+                          const button1 = document.querySelector(".button"),
+                          text1 = document.querySelector(".text");
+                      
+                          button1.addEventListener("click", ()=>{
+                            button1.classList.add("progress");
+                            text1.innerText = "Enviando...";
+                      
+                            setTimeout(()=>{
+                             button1.classList.remove("progress"); //remove progress after 6s
+                             text1.innerText = "Enviado";
+                            },6000); //1000ms = 1s (6000 = 6s)
+                      
+                          });
+                        
   </script>
 </body>
 

@@ -26,9 +26,8 @@ export default {
 
 @import url(./assets/css/estilos2.css);
 @import url(./assets/css/estilos_minivar.css);
-@import url(./assets/css/portada.css);
-@import url(./assets/css/sobre\ nosotros.css);
 @import url(./assets/css/nuestros\ libros.css);
+@import url(./assets/css/estilos_CAROUSEL-MATERIALIZE.css);
 @import url(https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css);
 
 </style>

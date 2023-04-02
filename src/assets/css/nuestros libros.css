@@ -12,6 +12,10 @@ body {
     user-select: none;
 }
 
+.subtitulo1{
+    font-family: 'Alkatra', cursive;
+  }
+
 .container{
     position: relative;
     min-height: 100vh;
@@ -85,4 +89,16 @@ body {
     font-weight: 400;
     background-color: grey;
     text-transform: capitalize;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 280px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 8vw;
+    }
 }
