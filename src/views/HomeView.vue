@@ -6,9 +6,7 @@
           <div class="col-s12">
               <div class="carousel center-align" id="carousel3">
                   <h2 class="subtitulo1">Nuestras Ediciones</h2>
-                    
                   <BooksItem  v-for="(item, x) in libros" :key="x" :image="`${item.edited}`"></BooksItem>
-  
               </div>
           </div>
       </div>
@@ -21,7 +19,7 @@
 import TheFront from '../components/TheFront.vue';
 import AboutUs from '../components/AboutUs.vue';
 import BooksItem from '../components/BooksItem.vue';
-import OurBooks from '../assets/Libros.json';
+import OurBooks from '../assets/books.json';
 import ContactUs from '../components/ContactUs.vue';
 
 
@@ -41,9 +39,3 @@ export default {
 }
 
 </script>
-
-<style scoped>
-
-
-</style>
-

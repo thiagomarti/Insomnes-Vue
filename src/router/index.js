@@ -13,11 +13,13 @@ const routes = [
     {
         path: '/antologias',
         name: 'Anthologies',
-        component: AnthologiesView
+        meta: { category: 'antologia' },
+        component: AnthologiesView,
     },
     {
         path: '/libros_de_autor',
         name: 'AuthorBooks',
+        meta: { category: 'autor' },        
         component: AuthorBooksView
     }
 ]

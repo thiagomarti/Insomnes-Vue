@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <label for="">Buscate algo {{ $route.meta.category }} </label> 
+    <label for="">Buscate algo </label> 
     <input v-model="searchString" placeholder="search" class="search-bar">
     <BooksGallery :items="filteredBooks" :title="`Galería filtrada`" />
   </div>
@@ -12,15 +12,15 @@ import BooksGallery from '@/components/BooksGallery.vue'
 import booksData from "@/assets/books.json";
 
 export default {
-  name: 'AnthologiesView',
+  name: 'GalleriesView',
   components: {
     BooksGallery
   },
   data () 
   {
-    console.log(this.$route)
     return {
       searchString: "",
+      // acá filtar por categoria. Fijate en el JS de las routas que le dejé configurado q cuando entre a la ruta de antologías setee la categoria en antología.
       books: booksData.filter(item => item.categoria == this.$route.meta.category )
     }     
   },

@@ -2,10 +2,10 @@
     <div class="gallery">
       <h3>{{ title }}</h3>
       <div class="galleryItems">
-        <div class="imageBox" v-for="(image, x) in items" :key="x" >
-          <img :src=image.src :alt=image.alt  />
+        <div class="imageBox" v-for="(item, x) in items" :key="x" >
+          <img :src=item.img :alt=item.nombre  />
           <br />
-          <span>{{ image.description }}</span>
+          <span>{{ item.description }}</span>
         </div>
       </div>
     </div>
