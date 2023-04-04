@@ -1,14 +1,14 @@
 <template>
     <div class="gallery">
-      <h3>{{ title }}</h3>
-      <div class="galleryItems">
-        <div class="imageBox" v-for="(item, x) in items" :key="x" >
-          <img :src=item.img :alt=item.nombre  />
-          <br />
-          <span>{{ item.description }}</span>
-        </div>
+      <div class="images">
+        <div class="image-box" data-name="" v-for="(item, x) in items" :key="x">
+                <a href=""> <img :src=item.img :alt=item.name  /></a>
+                <h6>&nbsp;&nbsp;{{ item.name }}&nbsp;&nbsp;</h6>
+            </div>
       </div>
     </div>
+
+            
   </template>
   
   <script>
@@ -29,4 +29,6 @@
     gap:1.25rem;
     padding-top:1.25rem;
   }
+
+ 
   </style>

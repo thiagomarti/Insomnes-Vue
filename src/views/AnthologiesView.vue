@@ -1,9 +1,10 @@
 <template>
-  <div class="search">
-    <label for="">Buscate algo {{ $route.meta.category }} </label> 
-    <input v-model="searchString" placeholder="search" class="search-bar">
-    <BooksGallery :items="filteredBooks" :title="`Galería filtrada`" />
-  </div>
+  
+        <div class="search-box">
+            <i class="bx bx-search"></i>
+            <input v-model="searchString" type="text" id="domTextElement" placeholder="Busca un Libro">
+        </div>
+        <BooksGallery :items="filteredBooks" />
 </template>
 
 <script>
@@ -20,7 +21,7 @@ export default {
   {
     return {
       searchString: "",
-      books: booksData.filter(item => item.categoria == this.$route.meta.category )
+      books: booksData.filter(item => item.category == this.$route.meta.category )
     }     
   },
   computed: {
@@ -47,23 +48,48 @@ export default {
         // Una vez q pasan por el Object.values, queda un unico item (array) solo con las values ['autor', 'A contramano', 'Susana B. Orlandi', 'los otros items..']
         // Pero nosotros necesitamos un STRING sobre el que hacer la busqueda, ahí entra el JOIN q convierte el array en un string y lo deja "autor A contramano Susana B. Orlandi".. un único string sobre el que indexOf puede buscar.
       */
-        const filteredBooks = this.searchString === ""
-            ? this.books
-            : this.books.filter(
-              wo => Object.values(wo)
-              .join("")
-              .toLowerCase()
-              .indexOf(this.searchString.toLowerCase()) !== -1);
-        return filteredBooks;
+      const filteredBooks = this.searchString === ""
+  ? this.books
+  : this.books.filter(wo => {
+      const searchString = [wo.author, wo.name].filter(Boolean).join("").toLowerCase();
+      return searchString.includes(this.searchString.toLowerCase());
+    });
+return filteredBooks;
     },
   }
 }
 </script>
 <style scoped>
-.search-bar {
-  width: 100px;
+
+@import url(@/assets/css/nuestros\ libros.css);
+.search-box{
+    position: relative;
+    height: 42px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 60px;
 }
-.search {
-  margin-top: 10px; 
+.search-box input{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: #323334;
+    padding: 0 0 0 45px;
+    color: #fff;
+    font-weight: 999;
+    border-radius: 6px;
+    margin-top: 40px;
+}
+.search-box i{
+    position: absolute;
+    z-index: 2;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    margin-top: 40px;
 }
 </style>

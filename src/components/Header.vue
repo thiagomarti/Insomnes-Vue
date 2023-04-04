@@ -35,7 +35,7 @@
 <style scoped>
 /* Header */
 .header{
-    background-color: rgb(121, 70, 3);
+    background-color: rgb(175 145 107);
     box-shadow: 1px 1px 5px 0px gray;
     position: sticky;
     top: 0;
@@ -59,7 +59,7 @@
 .nav{
     width: 100%;
     position: sticky;
-    background-color:rgb(121, 70, 3);
+    background-color:rgb(175 145 107);
     overflow: hidden;
     
 }
@@ -90,7 +90,7 @@
 
 /* Sub nav */
 .subnav-content {
-    background-color: rgb(121, 70, 3);
+    background-color: rgb(175 145 107);
     z-index: 1;
     padding: 20px 0 ;
     display: none;
@@ -175,8 +175,15 @@
 
 
 /* Responsiveness */
+@media (max-width: 800px) {
+.logo {
+    margin-top: 1.5%;
+}
+
+}
 
 @media (min-width: 768px) {
+
     .nav{
         max-height: none;
         top: 2px;
@@ -208,7 +215,7 @@
         display: none;
         position: fixed;
         font-size: initial;
-        background-color: rgb(121, 70, 3);
+        background-color: rgb(175 145 107);
         margin-left: initial;
     }
     .subnav-content a {
