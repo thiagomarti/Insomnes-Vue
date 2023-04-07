@@ -37,10 +37,10 @@
 .header{
     background-color: rgb(175 145 107);
     box-shadow: 1px 1px 5px 0px gray;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
 }
 
 /* Logo */

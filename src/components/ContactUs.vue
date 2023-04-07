@@ -7,21 +7,21 @@
             <div class="content">
                 <div class="left-side">
                     <div class="adress details">
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <i class="bx bx-map" aria-hidden="true"></i>
                       <div class="topic">ubicación</div>
                       <div class="text-one"> Argentina, Bs As</div> 
                       <div class="text-two">ituzaingó</div>
                     </div>
     
                     <div class="phone details">
-                      <i class="fa fa-phone" aria-hidden="true"></i>
+                      <i class="bx bx-phone" aria-hidden="true"></i>
                         <div class="topic">Número de Teléfono</div>
                         <div class="text-one">+54 11 2402-6001</div> 
                         <div class="text-two">+54 11 3414-1830</div>
                       </div>
     
                       <div class="Gmail details">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <i class="bx bx-envelope" aria-hidden="true"></i>
                         <div class="topic">Gmail</div>
                         <div class="text-one">ed.insomnes@gmail.com</div>
                       </div>

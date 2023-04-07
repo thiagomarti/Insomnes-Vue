@@ -3219,10 +3219,10 @@ table span.badge {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     h2 {
-        font-size: 8vw;
-        padding-top: 150px;
+        font-size: 11vw;
+        padding-top: 300px;
     }
 }
 
@@ -4230,11 +4230,7 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
     font-weight: inherit
 }
 
-h1 {
-    font-size: 4.2rem;
-    line-height: 110%;
-    margin: 2.8rem 0 1.68rem 0
-}
+
 @media screen and (min-width:800px) {
 
 h2 {

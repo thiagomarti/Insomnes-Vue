@@ -21,6 +21,7 @@ export default {
 .portada {
     background-color: rgb(235 231 225);
     height: 100vh;  
+    margin-top: 12vh;
 }
 
 .portadatext {

@@ -45,7 +45,8 @@ return filteredBooks;
     height: 42px;
     max-width: 400px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-top: 100px;
+    margin-bottom: 90px;
 }
 .search-box input{
     position: absolute;

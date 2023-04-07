@@ -19,12 +19,12 @@
     },
     {
       "category": "autor",
-      "name": "Antologías inconclusas",
-      "path": "antologías-inconclusas",      
+      "name": "Antologias inconclusas",
+      "path": "Antologias-inconclusas",      
       "author": "Martin Paris y Diego Paris",
       "description": "En este libro encontrarán cuentos cortos: relatos fantásticos, de ciencia ficción y humorísticos, todo mezclado como corresponde. Martin Paris y Diego Paris reúnen en esta antología sus mejores relatos... aunque el mejor relato siempre es el que está por escribirse.",
-      "img": "../assets/fotos/tapas libros/Antologías inconclusas.jpeg",
-      "edited": "./assets/fotos/edited/Antologías inconclusas.jpeg"
+      "img": "../assets/fotos/tapas libros/Antologi­as inconclusas.jpeg",
+      "edited": "./assets/fotos/edited/Antologias inconclusas.jpeg"
     },
     {
       "category": "autor",
@@ -49,7 +49,7 @@
       "name": "Colofón",
       "path": "colofon",      
       "author": "Hectór H. Vigna",
-      "description": "Por fortuna resulta imposible encasillar la obra de Héctor Vigna, un escritor capaz de navegar la lírica y la prosa con maestría. <br> En su corpus literario, Colofón no es la excepción: ni excluyente poemario ni mero texto narrativo, sino entrañables y sutiles letras que refulgen más allá de los géneros",
+      "description": "Por fortuna resulta imposible encasillar la obra de Héctor Vigna, un escritor capaz de navegar la lírica y la prosa con maestría. En su corpus literario, Colofón no es la excepción: ni excluyente poemario ni mero texto narrativo, sino entrañables y sutiles letras que refulgen más allá de los géneros",
       "img": "../assets/fotos/tapas libros/Colofón.jpeg",
       "edited": "./assets/fotos/edited/Colofón.jpeg"
     },
@@ -113,8 +113,8 @@
       "path": "es un día de aquel verano",      
       "author": "Dayler Sadith Lenes Pacheco",
       "description": "Es una serie de cuentos y relatos en los que se narran hechos algunas veces reales o simplemente fantásticos, enmarcados en el realismo mágico que nos brinda el caribe colombiano, evocando costumbres y tradiciones descritas de forma diferente y divertida, lo que te lleva a lo largo de la lectura a vivir y sentir los personajes como tú mismo, de tal manera que se van adueñando de tu ser, en el entorno natural de lugares mágicos que te transportan a mundos inigualables.",
-      "img": "../assets/fotos/tapas libros/Es un día de aquel verano.jpeg",
-      "edited": "./assets/fotos/edited/Es un día de aquel verano.jpeg"
+      "img": "../assets/fotos/tapas libros/Es un dia de aquel verano.jpeg",
+      "edited": "./assets/fotos/edited/Es un dia de aquel verano.jpeg"
     },
     {
       "category": "autor",
