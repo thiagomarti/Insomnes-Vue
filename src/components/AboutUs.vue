@@ -81,7 +81,7 @@ div.nosotros:before{
   width: 100%;
   border-radius: 12px;
   clip-path: circle(65% at right 35%);
-  background-image: url(../../public/assets/fotos/foto\ sobre\ nosotros.jpeg);
+  background-image: url(../../public/assets/images/foto\ sobre\ nosotros.jpeg);
   background-repeat: no-repeat;
   background-position: right;
 

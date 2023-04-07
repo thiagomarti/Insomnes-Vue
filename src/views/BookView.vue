@@ -8,7 +8,7 @@
         <ul class='hardcover_front'>
           <li>
             <img :src=book.img alt="libro" width="100%" height="100%">
-            <span class="ribbon bestseller">Nº1</span>
+           <!--<span class="ribbon bestseller">Nº1</span>-->
           </li>
           <li></li>
         </ul>        

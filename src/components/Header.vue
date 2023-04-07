@@ -2,7 +2,7 @@
     <!-- Navigation bar -->
     <header class="header">
         <!-- Logo -->
-        <router-link to="/"  class="logo"><img src="../../public/assets/fotos/insomnes.png" alt=""></router-link>
+        <router-link to="/"  class="logo"><img src="../../public/assets/images/insomnes.png" alt=""></router-link>
 
         <!-- Hamburger icon -->
         <input class="side-menu" type="checkbox" id="side-menu"/>

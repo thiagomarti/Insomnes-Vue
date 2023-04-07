@@ -30,7 +30,7 @@
                     <div class="topic-text">Envianos tu mensaje</div>
                     <p>si tenes alguna duda o queres consultar presupuesto</p>
                 
-                    <form id="form" action="https://editorial-insomnes.000webhostapp.com/send.php" method="post">
+                    <form id="form" action="../assets/contacto.php" method="post">
                       <div class="input-box">
                           <input type="text" placeholder="Nombre y Apellido" name="nombre" required="required">
                       </div>
