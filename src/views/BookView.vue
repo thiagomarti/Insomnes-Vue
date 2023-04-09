@@ -1,5 +1,5 @@
 <template>
-<div class="component" style="background-color: rgb(235, 231, 225); width: 98.9vw; height: 110vh; top: 78px; position: relative; z-index: 1;">
+<div class="component" style="background-color: rgb(235, 231, 225); width: 100%; height: 110vh; margin-top: 78px; z-index: 1; position: static;">
   <ul class="align">
     <!-- Book 1 -->
     <li>
@@ -133,6 +133,7 @@ a {
   width: 100%;
   max-width: 1170px;
   text-align: center;
+  
 }
 
 .align > li {

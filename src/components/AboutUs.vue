@@ -1,6 +1,6 @@
 <template>
 
-<div class="nosotros">
+<div class="nosotros" id="nosotros">
   <div class="containernosotros" id="nosotros">
    <div class="box one">
      <div class="details">

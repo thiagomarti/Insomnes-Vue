@@ -39,7 +39,7 @@ return filteredBooks;
 </script>
 <style scoped>
 
-@import url(@/assets/css/nuestros\ libros.css);
+@import url(@/assets/css/Books-search.css);
 .search-box{
 position: relative;
 height: 42px;

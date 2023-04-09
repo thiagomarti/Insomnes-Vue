@@ -12,9 +12,9 @@
         <nav class="nav">
             <ul class="menu">
                 <li><router-link to="/">INICIO</router-link></li>
-                <li><router-link to="/">SOBRE NOSOTROS</router-link></li>
+                <li><router-link to="/#nosotros">SOBRE NOSOTROS</router-link></li>
                 <li class="subnav">
-                    <p class="subnavbtn">EDICIONES <i class="fa fa-caret-down"></i></p>
+                    <p class="subnavbtn">EDICIONES <i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i></p>
                     <div class="subnav-content">
                         <router-link to="/libros_de_autor">Libros de autor</router-link>
                         <router-link to="/antologias">Antologias</router-link>
@@ -40,7 +40,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 99999;
 }
 
 /* Logo */
@@ -74,6 +74,11 @@
     color: white;
 }
 
+.menu p {
+    top: -16px;
+    position: relative;
+}
+
 .menu li{
     font-size: 2vh;
 }
@@ -84,30 +89,42 @@
 }
 
 .nav{
-    max-height: 0;
+    height: 0;
     transition: max-height .5s ease-out;
 }
 
 /* Sub nav */
 .subnav-content {
-    background-color: rgb(175 145 107);
+    background-color: rgb(170 141 105);
     z-index: 1;
     padding: 20px 0 ;
     display: none;
     position: sticky;
     font-size: 2vh;
-    margin-left: 6%;
+    margin-top: -35px;
+   
     
   }
 .subnav-content a {
     color: white;
     text-decoration: none;
     padding: 0;
-    margin: 10px 0;
 
 }
 .subnav:hover .subnav-content {
     display: block;
+}
+
+.fa-caret-up {
+    display: none;
+}
+
+.subnav:hover .fa-caret-up {
+    display: contents;
+}
+
+.subnav:hover .fa-caret-down {
+    display: none;
 }
 
 /* Menu Icon */
@@ -155,7 +172,7 @@
 /* Toggle menu icon */
 
 .side-menu:checked ~ nav{
-    max-height: 100%;
+    height: 100%;
 }
 
 .side-menu:checked ~ .hamb .hamb-line {
