@@ -40,35 +40,36 @@ return filteredBooks;
 <style scoped>
 
 @import url(@/assets/css/Books-search.css);
+
 .search-box{
-position: relative;
-height: 42px;
-max-width: 400px;
-margin: 0 auto;
-margin-top: 100px;
-margin-bottom: 90px;
+    position: relative;
+    height: 42px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 90px;
 }
 .search-box input{
-position: absolute;
-height: 100%;
-width: 90%;
-outline: none;
-border: none;
-background-color: #323334;
-padding: 0 0 0 45px;
-color: #fff;
-font-weight: 999;
-border-radius: 6px;
-margin-top: 40px;
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: #323334;
+    padding: 0 0 0 45px;
+    color: #fff;
+    font-weight: 999;
+    border-radius: 6px;
+    margin-top: 40px;
 }
 .search-box i{
-position: absolute;
-z-index: 2;
-color: #999;
-top: 50%;
-left: 15px;
-font-size: 20px;
-transform: translateY(-50%);
-margin-top: 40px;
+    position: absolute;
+    z-index: 2;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    margin-top: 40px;
 }
 </style>
