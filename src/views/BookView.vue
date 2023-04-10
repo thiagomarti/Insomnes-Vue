@@ -1,4 +1,5 @@
 <template>
+
 <div class="component" style="background-color: rgb(235, 231, 225); width: 100%; height: 110vh; margin-top: 78px; z-index: 1; position: static;">
   <ul class="align">
     <!-- Book 1 -->
@@ -45,6 +46,7 @@
 
 <script>
 import booksData from "@/assets/books.json";
+
 
 export default {
   name: 'BookView',
@@ -243,7 +245,6 @@ Table of Contents
   -webkit-transform: rotateY(-34deg) translateZ(8px);
   -moz-transform: rotateY(-34deg) translateZ(8px);
   transform: rotateY(-34deg) translateZ(8px);
-  z-index: 80;
 }
 
 .hardcover_back {

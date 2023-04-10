@@ -97,7 +97,7 @@
 .subnav-content {
     background-color: rgb(170 141 105);
     z-index: 1;
-    padding: 20px 0 ;
+    padding: 28px;
     display: none;
     position: sticky;
     font-size: 2vh;
