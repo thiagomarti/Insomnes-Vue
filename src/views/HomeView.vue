@@ -37,7 +37,7 @@ export default {
     }
   },
   mounted() {
-    document.addEventListener('DOMContentLoaded', function() {
+   // document.addEventListener('DOMContentLoaded', function() {
     const elementosCarousel = document.querySelectorAll(".carousel")
     /* eslint-disable */
     M.Carousel.init(elementosCarousel, {
@@ -47,7 +47,7 @@ export default {
         numVisible: 10,
 
     })
-  })
+ // })
 },
 }
 

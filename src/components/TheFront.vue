@@ -1,11 +1,11 @@
 <template>
     <div class="portada">
-      <div class="portadatext">
-      <h1>Editorial iNSomnes</h1>
-      <h5>Una editorial de autor que acompañara el proceso de su obra literaria</h5>
-      <img src="../../public/assets/images/libro-abierto.png" alt="">
+        <div class="portadatext">
+            <h1>Editorial iNSomnes</h1>
+            <h5>Una editorial de autor que acompañara el proceso de su obra literaria</h5>
+            <img src="../../public/assets/images/libro-abierto.png" alt="">
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

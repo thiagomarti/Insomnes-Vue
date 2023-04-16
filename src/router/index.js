@@ -33,3 +33,8 @@ const routes = [
 
 const router = createRouter({ history: createWebHistory(), routes })
 export default router
+
+router.beforeEach((to, from, next) => {
+    window.scrollTo(0, 0) // Esto hace que la página se desplace hasta la parte superior de la página en cada cambio de ruta.
+    next()
+  })

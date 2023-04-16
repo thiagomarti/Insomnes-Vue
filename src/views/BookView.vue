@@ -9,7 +9,7 @@
         <ul class='hardcover_front'>
           <li>
             <img :src=book.img alt="libro" width="100%" height="100%">
-           <!--<span class="ribbon bestseller">Nº1</span>-->
+            <!--<span class="ribbon bestseller">Nº1</span>-->
           </li>
           <li></li>
         </ul>        
@@ -62,32 +62,10 @@ export default {
 /*
 	A. Mini Reset 
 */
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 ::before,
 ::after {
   content: "";
-}
-
-html,
-body {
-  height: 100%;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-html {
-  font-size: 100%;
 }
 
 body {
@@ -173,9 +151,7 @@ Table of Contents
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+
 }
 
 /*
@@ -798,6 +774,22 @@ figcaption p {
   figcaption p{
     font-size: 4.5vw;
 }
+}
+
+@media screen and (min-width: 600px) {
+  .book {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book {
+  -webkit-transform-style: unset;
+  -moz-transform-style: unset;
+  transform-style: unset;
+  }
 }
 
 </style>

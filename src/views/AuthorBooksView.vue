@@ -1,10 +1,9 @@
 <template>
-  
-  <div class="search-box">
-      <i class="bx bx-search"></i>
-      <input v-model="searchString" type="text" id="domTextElement" placeholder="Busca un Libro">
-  </div>
-  <BooksGallery :items="filteredBooks" />
+    <div class="search-box">
+        <i class="bx bx-search"></i>
+        <input v-model="searchString" type="text" id="domTextElement" placeholder="Busca un Libro">
+    </div>
+    <BooksGallery :items="filteredBooks" />
 </template>
 
 <script>
@@ -39,7 +38,7 @@ return filteredBooks;
 </script>
 <style scoped>
 
-@import url(@/assets/css/Books-search.css);
+@import url(@/assets/css/books-search.css);
 
 .search-box{
     position: relative;
