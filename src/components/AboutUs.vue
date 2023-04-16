@@ -1,6 +1,6 @@
 <template>
   <div class="nosotros" id="nosotros">
-    <div class="containernosotros" id="nosotros">
+    <div class="containernosotros">
       <div class="box one">
         <div class="details">
           <div class="topic">Sobre Nosotros</div>
@@ -78,7 +78,7 @@ div.nosotros:before {
   width: 100%;
   border-radius: 12px;
   clip-path: circle(65% at right 35%);
-  background-image: url(../../public/assets/images/foto\ sobre\ nosotros.jpeg);
+  background-image: url(../../public/assets/images/foto-sobre-nosotros.jpeg);
   background-repeat: no-repeat;
   background-position: right;
 }
