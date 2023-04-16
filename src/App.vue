@@ -31,6 +31,11 @@ export default {
 @import url(./assets/css/books-carousel.css);
 @import url(https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css);
 
+
+#app {
+  user-select: none;
+}
+
 .icons a.wp{
     bottom: 60px;
     right: 1%;
