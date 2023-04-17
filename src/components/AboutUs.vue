@@ -13,9 +13,6 @@
             tomaron como una señal para comenzar oficialmente su emprendimiento.
           </p>
         </div>
-        <div class="button1">
-          <button><a href="#contacto">contactar</a></button>
-        </div>
       </div>
       <div class="box two">
         <div class="image-box">
@@ -169,7 +166,7 @@ p.nosotros {
     clip-path: none;
   }
   .containernosotros {
-    top: 100px;
+    top: 150px;
     max-width: 750px;
   }
   .containernosotros::before {

@@ -11,25 +11,25 @@
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
     <!-- Menu -->
-    <nav class="nav">
+    <nav class="nav corruptible">
       <ul class="menu">
-        <li><router-link to="/">INICIO</router-link></li>
-        <li><router-link to="/">SOBRE NOSOTROS</router-link></li>
+        <li class="selectable"><router-link to="/">INICIO</router-link></li>
+        <li class="selectable"><router-link to="#nosotros">SOBRE NOSOTROS</router-link></li>
         <li class="subnav">
           <p class="subnavbtn">
             EDICIONES <i class="fa fa-caret-down"></i>
             <i class="fa fa-caret-up"></i>
           </p>
           <div class="subnav-content">
-            <router-link to="/libros_de_autor">Libros de autor</router-link>
-            <router-link to="/antologias">Antologias</router-link>
+            <router-link to="/libros_de_autor" class="selectable">Libros de autor</router-link>
+            <router-link to="/antologias" class="selectable">Antologias</router-link>
           </div>
         </li>
         <li class="menuFace">
-          <a id="face" href="https://www.facebook.com/people/Editorial-Insomnes/100076280835164/" target="_blank"><i class="bx bxl-facebook-circle bx-sm" style="color: #ffffff"></i></a>
+          <a id="face" class="selectable" href="https://www.facebook.com/people/Editorial-Insomnes/100076280835164/" target="_blank"><i class="bx bxl-facebook-circle bx-sm" style="color: #ffffff"></i></a>
         </li>
         <li class="menuIg">
-          <a id="ig" href="https://www.instagram.com/editorial_insomnes/" target="_blank"><i class="bx bxl-instagram bx-sm" style="color: #ffffff"></i></a>
+          <a id="ig" class="selectable" href="https://www.instagram.com/editorial_insomnes/" target="_blank"><i class="bx bxl-instagram bx-sm" style="color: #ffffff"></i></a>
         </li>
       </ul>
     </nav>
@@ -50,7 +50,7 @@
 .logo {
   display: inline-block;
   color: white;
-  margin-top: 0.8%;
+  margin-top: 1.2%;
   margin-left: 10px;
 }
 
@@ -99,7 +99,6 @@
 .subnav-content {
   background-color: rgb(170 141 105);
   z-index: 1;
-  padding: 28px;
   display: none;
   position: sticky;
   font-size: 2vh;
@@ -108,7 +107,8 @@
 .subnav-content a {
   color: white;
   text-decoration: none;
-  padding: 0;
+  padding: 20px;
+  padding-left: 28px;
 }
 .subnav:hover .subnav-content {
   display: block;
@@ -168,6 +168,7 @@
 /* Toggle menu icon */
 
 .side-menu:checked ~ nav {
+  height: initial;
   height: 100%;
 }
 
@@ -254,4 +255,15 @@
 export default {
   name: "HeaderComponent",
 };
+
+/* eslint-disable */
+$(document).ready(function() {
+  // Cierra el menú desplegable cuando se hace clic en un enlace de la navbar
+  let selectable = document.querySelectorAll(".selectable");
+  let checkbox = document.getElementById("side-menu");
+  $(selectable).on('click', function(){
+   
+    checkbox.checked = false;
+  });
+});
 </script>

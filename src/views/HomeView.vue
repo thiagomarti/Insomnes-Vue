@@ -1,7 +1,7 @@
 <template>
   <TheFront />
   <AboutUs />
-  <div class="container" id="libritos2">
+  <div class="container" id="bookscarousel">
       <div class="row">
           <div class="col-s12">
             <h2 class="subtitulo1">Nuestras Ediciones</h2>
@@ -11,7 +11,6 @@
           </div>
       </div>
   </div>
-  <ContactUs />
 
 </template>
 
@@ -20,7 +19,6 @@ import TheFront from '@/components/TheFront.vue';
 import AboutUs from '@/components/AboutUs.vue';
 import BooksItem from '@/components/BooksItem.vue';
 import booksData from "@/assets/books.json";
-import ContactUs from '@/components/ContactUs.vue';
 
 
 export default {
@@ -29,7 +27,6 @@ export default {
     TheFront,
     AboutUs,
     BooksItem,
-    ContactUs,
   },
   data() {
     return {
