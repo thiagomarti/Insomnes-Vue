@@ -73,6 +73,15 @@
     },
     {
       "category": "autor",
+      "name": "El dolor como un karma",
+      "path": "el-dolor-como-un-karma",      
+      "author": "Daniel Luciani",
+      "description": "Es la historia de una joven que vive entre el vicio y la autodestrucción y su padre que haría todo por ella. Si crees en el destino, el karma, o en que siempre cosechás lo que sembrás, esta obra te puede atrapar y conmover.",
+      "img": "../assets/images/authorBooks-front/el-dolor-como-un-karma.jpeg",
+      "edited": "./assets/images/edited/el-dolor-como-un-karma.jpeg"
+    },
+    {
+      "category": "autor",
       "name": "El polen de mis huesos",
       "path": "el-polen-de-mis-huesos",      
       "author": "Norma Elena Ruiz",
@@ -90,13 +99,13 @@
       "edited": "./assets/images/edited/el-puente-el-rio-y-sus-letras-VII.jpeg"
     },
     {
-      "category": "autor",
-      "name": "El dolor como un karma",
-      "path": "el-dolor-como-un-karma",      
-      "author": "Daniel Luciani",
-      "description": "Es la historia de una joven que vive entre el vicio y la autodestrucción y su padre que haría todo por ella. Si crees en el destino, el karma, o en que siempre cosechás lo que sembrás, esta obra te puede atrapar y conmover.",
-      "img": "../assets/images/authorBooks-front/el-dolor-como-un-karma.jpeg",
-      "edited": "./assets/images/edited/el-dolor-como-un-karma.jpeg"
+      "category": "antologia",
+      "name": "El tintero",
+      "path": "el-tintero",      
+      "author": "maría angélica sayavedra matías ecudero rodal sebastián gotta iván spinoza damián javier ponce alexander platz",
+      "description": "Descubre un taller literario único que ha evolucionado en una comunidad de escritores apasionados. Este libro nace de la necesidad de compartir las experiencias y técnicas que han llevado a cada individuo a explorar nuevas formas de literatura. Sumérgete en una lectura cautivadora y si te sientes inspirado, únete a nosotros para convertir el lenguaje en arte",
+      "img": "../assets/images/authorBooks-front/el-tintero.jpeg",
+      "edited": "./assets/images/edited/el-tintero.jpeg"
     },
     {
       "category": "autor",
@@ -232,6 +241,15 @@
       "description": "Myriam Griselda Recalde, pone sobre la mesa del lector las vivencias de una madre frente a la convivecia con su hijo adicto. <br> La María Jose invadió su vida sin que ella pudiera evitarlo.",
       "img": "../assets/images/authorBooks-front/no-hablen-de-mi.jpeg",
       "edited": "./assets/images/edited/no-hablen-de-mi.jpeg"
+    },
+    {
+      "category": "antologia",
+      "name": "Oro Nestas Piedras",
+      "path": "oro-nestas-piedras",      
+      "author": "rotary club",
+      "description": "Héctor Vigna nos hizo conocer a Jorge Leónidas “Chiquito” Escudero. Yo vi que lo llamaba “Chiquito” directamente. Escudero fue minero muchos años en San Juan, y relacionaba ese hecho con la literatura. Al final se trata de encontrar un poco de oro entre toda esta montaña de piedras. Así ocurre en la literatura: encontrar la frase o la imagen clara y brillante entre montones de palabras.",
+      "img": "../assets/images/authorBooks-front/oro-nestas-piedras.jpeg",
+      "edited": "./assets/images/edited/oro-nestas-piedras.jpeg"
     },
     {
       "category": "autor",

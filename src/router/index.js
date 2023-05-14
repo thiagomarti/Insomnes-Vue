@@ -4,6 +4,7 @@ import HomeView from '@/views/HomeView.vue'
 import BookView from '@/views/BookView.vue'
 import AuthorBooksView from '@/views/AuthorBooksView.vue'
 import AnthologiesView from '@/views/AnthologiesView.vue'
+import AdminView from '@/views/AdminView.vue'
 
 const routes = [
     {
@@ -21,6 +22,11 @@ const routes = [
         name: 'Anthologies',
         meta: { category: 'antologia' },
         component: AnthologiesView,
+    },
+    {
+        path: '/Admin',
+        name: 'Admin',
+        component: AdminView,
     },
     {
         path: '/libros_de_autor',
