@@ -14,7 +14,7 @@
     <nav class="nav corruptible">
       <ul class="menu">
         <li class="selectable"><router-link to="/">INICIO</router-link></li>
-        <li class="selectable"><router-link to="#nosotros">SOBRE NOSOTROS</router-link></li>
+        <li class="selectable"><router-link to="/admin">SOBRE NOSOTROS</router-link></li>
         <li class="subnav">
           <p class="subnavbtn">
             EDICIONES <i class="fa fa-caret-down"></i>
